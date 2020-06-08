@@ -1486,7 +1486,8 @@ sub OpenMainWindow()
 	view (settingsWidth-settingsVSplitDivider-57)/2-150,(settingsHSplitDivider-1)/2-190 to (settingsWidth-settingsVSplitDivider-57)/2+150,(settingsHSplitDivider-1)/2+190, "Logo", "Stack"+str$(MAXFILES+2)
 	draw set "bgcolor", 255,255,255, "Stack"+str$(MAXFILES+2)
 	draw set "bgcolor", 255,255,255, "Logo"
-	err = draw image 0,0 to 300,-1, gfxDir$+"img/logo.png", "Logo"
+	err = draw image 0,0 to 300,-1, gfxDir$+"logo.png", "Logo"
+
 	stackview set "Stack", MAXFILES+2
 	stackview set "Lines", MAXFILES+2
 	layout "standard", "Stack"+str$(MAXFILES+2)
